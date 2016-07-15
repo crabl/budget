@@ -6,6 +6,9 @@ LIST=$(addprefix $(BIN_DIR)/, $(PROG))
 
 all: $(LIST)
 
+clean:
+	rm -rf bin/
+
 $(BIN_DIR)/%: $(SRC_DIR)/%.cbl
 	mkdir -p bin
-	cobc -x -free $< -o $@
+	cobc -x -free -Wall $< -o $@

@@ -6,13 +6,13 @@ DATA DIVISION.
 	WORKING-STORAGE SECTION.
 		01 InterestCalculation.
 			02 Inputs.
-				03 Principal PIC 9(5).
-				03 NumberOfYears PIC 9(4).
-				03 InterestRate PIC 9(4).
-				03 CalculationMethod PIC X(2).
+				03 Principal 			PIC 9(5).
+				03 NumberOfYears 		PIC 9(4).
+				03 InterestRate 		PIC 9(4).
+				03 CalculationMethod 	PIC X(2).
 			02 Outputs.
-			 	03 SimpleInterest PIC 999999.99.
-				03 CompoundInterest PIC 999999.99.
+			 	03 SimpleInterest 		PIC 999999.99.
+				03 CompoundInterest 	PIC 999999.99.
 
 PROCEDURE DIVISION.
 	DISPLAY "Principal Amount: $" WITH NO ADVANCING.
